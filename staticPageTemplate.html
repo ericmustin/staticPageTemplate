@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style type="text/css">
+    
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    [class*="col-"] {
+      float: left;
+    }
+
+    div#fixedHeader {
+      position: static;
+      width: 100%;
+      height: auto; 
+    }
+
+    div#templateLogo {
+      display: inline;
+    }
+
+    #logo {
+      height: 131px;
+    }
+
+    div#templateTitleContainer {
+      text-align: center;
+      display: inline;
+      font-weight: bold;
+    }
+
+
+    div#templateContact {
+      display: inline;
+      text-align: right;
+      color: rgb(106,192,203);
+      font-size: 16px;
+      font-family: 'Sans-Serif';
+    }
+
+    a {
+      text-decoration: none;
+      font-family: 'Sans-Serif';
+      font-color: rgb(106,192,203);
+    }
+
+    a:visited {
+      color: rgb(106,192,203);
+    }
+
+    a.templateTitleName {
+      font-size: 36px;
+      font-weight: bold;
+      
+    }
+
+    a.templateTitleSubTags {
+      font-size: 16px;
+      padding: 12px;
+      font-weight: normal;
+
+    }
+
+    img#backgroundImage {
+      position: fixed;
+      max-width: 100%;
+      max-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+
+      div#templateContact {
+        text-align: center;
+      }
+
+      div#templateTitleContainer {
+        text-align: center; 
+      }
+
+      div#templateLogo {
+        text-align: center; 
+      }
+    }
+
+  </style>
+  </head>
+  <body>
+    <div id="fixedHeader">
+        <div class="col-4" id="templateLogo">
+          <a href="https://www.google.com">
+            <img id="logo" src="https://pbs.twimg.com/profile_images/638751551457103872/KN-NzuRl.png"/>
+          </a>
+        </div>
+        <div class="col-4" id="templateTitleContainer">
+          <p><a class='templateTitleName' href="https://www.google.com"> Title </a></p>
+          <p>
+            <a class='templateTitleSubTags' href="https://www.google.com">ONE</a>
+            <a class='templateTitleSubTags' href="https://www.google.com">TWO</a>    
+            <a class='templateTitleSubTags' href="https://www.google.com">THREE</a></p>
+        </div>
+        <div class="col-4" id="templateContact">1-800-1234567</div>
+    </div>
+    <div class='col-12'>
+      <a href="https://www.google.com">
+        <img id="backgroundImage" src="https://scholar.google.com/intl/en/scholar/images/1x/googlelogo_color_270x104dp.png"/>
+      </a>
+    </div>
+  </body>
+</html>
